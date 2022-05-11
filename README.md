@@ -94,6 +94,9 @@ Configuration finished
   #--local_cpu_resources=6 \
   //tensorflow/tools/pip_package:build_pip_package
 ```
+After building tensorflow build the whl file with:
+`` bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg``
+
 ### 2-2. PyTorch build example
 ```
 # TORCHVER=v1.7.1

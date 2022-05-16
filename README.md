@@ -97,6 +97,21 @@ Configuration finished
 After building tensorflow build the whl file with:
 `` bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg``
 
+Install the whl file using pip:
+
+``pip install tensorflow-XXX.whl``
+
+Check gpu availability:
+
+``tf.config.list_physical_devices('GPU')``
+
+and/or
+
+``tf.test.is_gpu_available()``
+
+
+
+
 ### 2-2. PyTorch build example
 ```
 # TORCHVER=v1.7.1
